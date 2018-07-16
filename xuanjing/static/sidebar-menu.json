@@ -1,0 +1,306 @@
+[{
+    "text": "总概览",
+    "heading":true,
+    "hidden":true,
+    "psref":"#",
+    "sref": "app.overview",
+    "icon": "icon icomoon",
+    "arrow":"nav-dropdown-toggle",
+    "label": "label label-info",
+    "submenu": [
+      {"text": "总概览", "sref": "app.overview.overview",     "psref":"app.overview" }
+    ],
+    "translate": ""
+  },
+  {
+    "text": "账号管理",
+    "hidden":true,
+    "heading":true,
+    "psref":"#",
+    "sref": "app.accountmgr",
+    "icon": "icon icomoon icon-account-number_people",
+    "arrow":"nav-dropdown-toggle",
+    "alert": "3" ,
+    "label": "label label-info",
+    "submenu": [
+      {"text": "安全设置",     "sref": "app.accountmgr.securityset","psref":"app.accountmgr"},
+      {"text": "基本资料",     "sref": "app.accountmgr.info" ,"psref":"app.accountmgr"},
+      {"text": "实名认证",     "sref": "app.accountmgr.creditet" ,"psref":"app.accountmgr"},
+      {"text": "子账号管理",   "sref": "app.accountmgr.subaccountmgr" ,"psref":"app.accountmgr"}
+    ],
+    "translate": ""
+  },
+  {
+    "text": "云服务器ECS",
+    "heading":true,
+    "psref":"#",
+    "sref": "app.ecs",
+    "icon": "icon icomoon icon-ecs_people",
+    "translate": "",
+    "arrow":"nav-dropdown-toggle",
+    "alert":"new",
+    "submenu": [
+      {"text": "概览", "sref": "app.ecs.overview",     "psref":"app.ecs"},
+      {"text": "实例", "sref": "app.ecs.inst-list",     "psref":"app.ecs" },
+      {"text": "存储", "sref": "#",     "psref":"app.ecs","submenu": [
+        {"text": "云盘", "sref": "app.ecs.clouddisc-list", "psref":"app.ecs.storage" },
+        {"text": "云盘快照", "sref": "app.ecs.snaplist", "psref":"app.ecs.storage" },
+        {"text": "自动快照策略", "sref": "app.ecs.autosnapstrategy", "psref":"app.ecs.storage" }
+
+      ]
+      },
+      {"text": "镜像", "sref": "app.ecs.image", "psref":"app.ecs" },
+      {"text": "网络和安全", "sref": "#", "psref":"app.ecs" ,"submenu": [
+        {"text": "安全组", "sref": "app.ecs.netsecurity.safegrp", "psref":"ecs.netsecurity" },
+        {"text": "密钥对", "sref": "app.ecs.netsecurity.keypair", "psref":"ecs.netsecurity" },
+        {"text": "专有网络VPC","sref": "app.vpc.pn" , "psref":"ecs.netsecurity", "icon":"icon ecs-menu_link-icon_people","opennewtab":true },
+        {"text": "弹性公网IP", "sref": "app.ip.flexip", "psref":"ecs.netsecurity", "icon":"icon ecs-menu_link-icon_people","opennewtab":true }
+      ]
+      },
+      {"text": "标签管理","sref": "app.ecs.lablemgr" , "psref":"app.ecs" },
+
+      {"text": "返回", "sref": "app.ecs.inst-list", "psref":"ecs.inst" },
+      {"text": "实例详情", "sref": "app.ecs.inst.detail", "psref":"ecs.inst"},
+      {"text": "本实例磁盘", "sref": "app.ecs.inst.disc", "psref":"ecs.inst"},
+      {"text": "本实例快照", "sref": "app.ecs.inst.snap", "psref":"ecs.inst"},
+      {"text": "本实例安全组", "sref": "app.ecs.inst.safegrp", "psref":"ecs.inst"},
+
+
+      {"text": "返回", "sref": "app.ecs.clouddisc-list", "psref":"ecs.clouddisc" },
+      {"text": "磁盘详情", "sref": "app.ecs.clouddisc.detail", "psref":"ecs.clouddisc"},
+      {"text": "磁盘监控信息", "sref": "app.ecs.clouddisc.monitorinfo", "psref":"ecs.clouddisc"},
+
+      {"text": "返回", "sref": "app.ecs.snaplist", "psref":"ecs.snaplist" },
+      {"text": "快照列表", "sref": "app.ecs.snaplist.detail", "psref":"ecs.snaplist"},
+
+      {"text": "返回", "sref": "app.ecs.netsecurity.safegrp", "psref":"ecs.netsecurity.safegrp" },
+      {"text": "安全组内实例列表", "sref": "app.ecs.netsecurity.safegrp-instmgr", "psref":"ecs.netsecurity.safegrp"},
+      {"text": "安全组规则", "sref": "app.ecs.netsecurity.safegrp-rule", "psref":"ecs.netsecurity.safegrp"}
+    ]
+  },
+
+  {
+    "text": "对象存储OSS",
+    "heading":true,
+    "psref":"#",
+    "sref": "app.oss",
+    "icon": "icon icon-oss_people",
+    "translate": "",
+    "arrow":"nav-dropdown-toggle",
+    "alert":"new",
+    "submenu": [
+      {"text": "概览", "sref": "app.oss.overview",     "psref":"app.oss"},
+      {"text": "密钥管理", "sref": "app.oss.skeymgr",     "psref":"app.oss"},
+      {"text": "存储空间", "sref": "app.oss.bucket", "psref":"app.oss" },
+
+      {"text": "返回", "sref": "app.oss.overview", "psref":"oss.overview" },
+      {"text": "对象存储", "sref": "app.oss.alarmrule", "psref":"oss.overview"},
+
+      {"text": "返回", "sref": "app.oss.bucket.basicset",     "psref":"oss.bucket.basicset" },
+      {"text": "跨域设置", "sref": "app.oss.bucket.basicset-corsset", "psref":"oss.bucket.basicset" },
+      {"text": "镜像回源", "sref": "app.oss.bucket.basicset-mirrorrs", "psref":"oss.bucket.basicset" }
+
+    ]
+  },
+
+  {
+    "text": "专有网络VPC",
+    "heading":true,
+    "psref":"#",
+    "sref": "app.vpc",
+    "icon": "icon icon-vpc_people",
+    "translate": "",
+    "arrow":"nav-dropdown-toggle",
+    "alert":"new",
+    "submenu": [
+      {"text": "专有网络", "sref": "app.vpc.pn",     "psref":"app.vpc" },
+      {"text": "虚拟防火墙", "sref": "app.vpc.vfirewall",     "psref":"app.vpc" },
+      {"text": "快捷连接",         "sref": "#",                "psref":"app.vpc",
+        "submenu": [
+          {"text": "对等连接", "sref": "app.vpc.peerconn",     "psref":"app.vpc" }
+        ]
+      },
+
+      {"text": "返回", "sref": "app.vpc.pn",     "psref":"vpc.pn" },
+      {"text": "专有网络详情", "sref": "app.vpc.pn-detail", "psref":"vpc.pn" },
+      {"text": "子网", "sref": "app.vpc.pn-subnet", "psref":"vpc.pn" },
+
+      {"text": "返回", "sref": "app.vpc.vfirewall", "psref":"vpc.vfirewall" },
+      {"text": "防火墙详情", "sref": "app.vpc.vfirewall-detail", "psref":"vpc.vfirewall" },
+
+      {"text": "返回", "sref": "app.vpc.peerconn", "psref":"vpc.peerconn" },
+      {"text": "对等连接详情", "sref": "app.vpc.peerconn-detail", "psref":"vpc.peerconn" }
+    ]
+  },
+  {
+    "text": "弹性公网IP",
+    "heading":true,
+    "psref":"#",
+    "sref": "app.ip",
+    "icon": "icon icon-ip_people",
+    "translate": "",
+    "arrow":"nav-dropdown-toggle",
+    "alert":"new",
+    "submenu": [
+      {"text": "弹性公网IP", "sref": "app.ip.flexip",     "psref":"app.ip" }
+    ]
+  },
+
+  {
+    "text": "云监控",
+    "heading":true,
+    "psref":"#",
+    "sref": "app.monitor",
+    "icon": "icon icon-monitor_people",
+    "translate": "",
+    "arrow":"nav-dropdown-toggle",
+    "alert":"new",
+    "submenu": [
+      {"text": "报警服务", "sref": "#", "psref":"app.monitor",
+        "submenu": [
+          {"text": "报警规则", "sref": "app.monitor.alarmrule-list",     "psref":"app.monitor" },
+          {"text": "报警历史", "sref": "app.monitor.alarmhistory", "psref":"app.monitor" },
+          {"text": "报警联系人", "sref": "app.monitor.alarmcontacts", "psref":"app.monitor" }
+        ]
+      },
+      {"text": "返回", "sref": "app.monitor.alarmrule-list",     "psref":"monitor.alarmrule" },
+      {"text": "基本信息", "sref": "app.monitor.alarmrule.info", "psref":"monitor.alarmrule" },
+      {"text": "报警历史", "sref": "app.monitor.alarmrule.history", "psref":"monitor.alarmrule" }
+
+    ]
+  },
+  {
+    "text": "云主机安全",
+    "heading":true,
+    "psref":"#",
+    "sref": "app.security",
+    "icon": "icon  icon-security_people ",
+    "translate": "",
+    "arrow":"nav-dropdown-toggle",
+    "alert":"new",
+    "submenu": [
+      {"text": "总览", "sref": "app.security.overview",     "psref":"app.security" },
+      {"text": "资产列表", "sref": "app.security.assetslist-list",     "psref":"app.security" },
+      {"text": "安全防护", "sref": "#", "psref":"app.security",
+        "submenu": [
+          {"text": "漏洞管理", "sref": "app.security.vulnerablity-mgr",     "psref":"app.security" },
+          {"text": "基线检查", "sref": "app.security.baselinecheck-mgr", "psref":"app.security" },
+          {"text": "弱口令检查", "sref": "app.security.weakpwdchk-list", "psref":"app.security" },
+          {"text": "防暴力破解", "sref": "app.security.anti-violence-cracking", "psref":"app.security" },
+          {"text": "防端口扫描", "sref": "app.security.anti-port-scan", "psref":"app.security" }
+        ]
+      },
+      {"text": "入侵检测","sref": "#", "psref":"app.security",
+        "submenu": [
+          {"text": "异常登录", "sref": "app.security.exceptionlogin",     "psref":"app.security" },
+          {"text": "主机后门", "sref": "app.security.webshell", "psref":"app.security" },
+          {"text": "主机异常", "sref": "app.security.hostanomaly", "psref":"app.security" }
+        ]
+      },
+      {"text": "操作审计", "sref": "app.security.audit",     "psref":"app.security" },
+      {"text": "主机信息", "sref": "app.security.hostinfo-list",     "psref":"app.security" },
+      {"text": "安全配置", "sref": "app.security.safecfg",     "psref":"app.security" },
+      {"text": "告警配置", "sref": "app.security.alarmcfg",     "psref":"app.security" },
+      {"text": "黑名单", "sref": "app.security.blacklist",     "psref":"app.security" },
+      {"text": "白名单", "sref": "app.security.whitelist",     "psref":"app.security" },
+      {"text": "安装/卸载", "sref": "app.security.install",     "psref":"app.security" },
+
+
+      {"text": "返回", "sref": "app.security.assetslist-list",     "psref":"security.assetslist" },
+      {"text": "基本信息", "sref": "app.security.assetslist.baseinfo",     "psref":"security.assetslist" },
+      {"text": "主机信息", "sref": "app.security.assetslist.hostinfo",     "psref":"security.assetslist" },
+      {"text": "漏洞信息", "sref": "app.security.assetslist.vulnerablity",     "psref":"security.assetslist" },
+      {"text": "基线检查", "sref": "app.security.assetslist.baselinecheck",     "psref":"security.assetslist" },
+      {"text": "弱口令检查", "sref": "app.security.assetslist.weakpwdchk",     "psref":"security.assetslist" },
+      {"text": "防暴力破解", "sref": "app.security.assetslist.antiviolencecracking",     "psref":"security.assetslist" },
+      {"text": "防端口扫描", "sref": "app.security.assetslist.antiportscan",     "psref":"security.assetslist" },
+      {"text": "异常登录", "sref": "app.security.assetslist.exceptionlogin",     "psref":"security.assetslist" },
+      {"text": "主机后门", "sref": "app.security.assetslist.webshell",     "psref":"security.assetslist" },
+      {"text": "主机异常", "sref": "app.security.assetslist.hostanomaly",     "psref":"security.assetslist" },
+      {"text": "安全配置", "sref": "app.security.assetslist.safecfg",     "psref":"security.assetslist" },
+
+      {"text": "返回", "sref": "app.security.vulnerablity-mgr",     "psref":"security.vulnerablity" },
+      {"text": "详情", "sref": "app.security.vulnerablity.info", "psref":"security.vulnerablity" },
+
+      {"text": "返回", "sref": "app.security.baselinecheck-mgr",     "psref":"security.baselinecheck" },
+      {"text": "详情", "sref": "app.security.baselinecheck.info", "psref":"security.baselinecheck" },
+
+      {"text": "返回", "sref": "app.security.weakpwdchk-list",     "psref":"security.weakpwdchk" },
+      {"text": "详情", "sref": "app.security.weakpwdchk.info", "psref":"security.weakpwdchk" },
+
+      {"text": "返回", "sref": "app.security.hostinfo-list",     "psref":"security.hostinfo" },
+      {"text": "详情", "sref": "app.security.hostinfo.info", "psref":"security.hostinfo" }
+    ]
+  },
+
+  {
+    "text": "备案管理",
+    "heading":true,
+    "hidden":true,
+    "psref":"#",
+    "sref": "app.ICPfiling",
+    "icon": "icon icomoon ",
+    "arrow":"nav-dropdown-toggle",
+    "alert": "3" ,
+    "label": "label label-info",
+    "submenu": [
+      {"text": "我的备案",     "sref": "app.ICPfiling.ICPfilingmgr","psref":"app.ICPfiling"},
+
+      {"text": "我的备案", "sref": "app.ICPfiling.ICPfilingmgr",     "psref":"ICPfiling.ICPfiling-list" },
+      {"text": "备案详情", "sref": "app.ICPfiling.ICPfiling-list.detail", "psref":"ICPfiling.ICPfiling-list" }
+    ]
+  },
+
+  {
+    "text": "工单系统",
+    "heading":true,
+    "hidden":true,
+    "psref":"#",
+    "sref": "app.ticketSystem",
+    "icon": "icon icomoon ",
+    "arrow":"nav-dropdown-toggle",
+    "alert": "3" ,
+    "label": "label label-info",
+    "submenu": [
+      {"text": "我的工单",     "sref": "app.ticketSystem.myTicket-list","psref":"app.ticketSystem"},
+
+
+      {"text": "< 我的工单", "sref": "app.ticketSystem.myTicket-list",     "psref":"ticketSystem.myTicket" },
+      {"text": "工单详情", "sref": "app.ticketSystem.myTicket.info", "psref":"ticketSystem.myTicket" }
+    ]
+  },
+
+  {
+    "text": "费用中心",
+    "heading":true,
+    "hidden":true,
+    "psref":"#",
+    "sref": "app.pricing",
+    "icon": "icon icomoon ",
+    "arrow":"nav-dropdown-toggle",
+    "alert": "3" ,
+    "label": "label label-info",
+    "submenu": [
+      {"text": "订单管理",     "sref": "app.pricing.ordermgr-list","psref":"app.pricing"},
+
+
+      {"text": "< 订单列表", "sref": "app.pricing.ordermgr-list",     "psref":"pricing.ordermgr-list" },
+      {"text": "订单详情", "sref": "app.pricing.ordermgr.info", "psref":"pricing.ordermgr" }
+    ]
+  },
+
+  {
+    "text": "操作日志",
+    "heading":true,
+    "hidden":true,
+    "psref":"#",
+    "sref": "app.operateLogs",
+    "icon": "icon icomoon ",
+    "arrow":"nav-dropdown-toggle",
+    "alert": "3" ,
+    "label": "label label-info",
+    "submenu": [
+      {"text": "操作日志",     "sref": "app.operateLogs.loglist","psref":"app.operateLogs"}
+    ]
+  }
+]
